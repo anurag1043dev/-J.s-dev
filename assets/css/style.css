@@ -1267,6 +1267,81 @@ main {
   filter: grayscale(1) invert(1);
 }
 
+.contact-info-section {
+  background: var(--eerie-black-2);
+  padding: 20px;
+  border-radius: 16px;
+  margin-bottom: 30px;
+  border: 1px solid var(--jet);
+}
+
+.contact-info-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+.contact-card {
+  padding: 20px 0;
+}
+
+.contact-card h3 {
+  margin-bottom: 20px;
+  color: var(--white-1);
+}
+
+.contact-info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-info-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.contact-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--light-gray);
+  font-size: var(--fs-7);
+  font-weight: 500;
+}
+
+.contact-label ion-icon {
+  font-size: 18px;
+  color: var(--orange-yellow-crayola);
+}
+
+.contact-info-text {
+  margin: 0;
+  color: var(--white-2);
+  font-size: var(--fs-7);
+  line-height: 1.6;
+}
+
+.contact-info-text .contact-link {
+  color: var(--orange-yellow-crayola);
+  text-decoration: none;
+  transition: var(--transition-1);
+}
+
+.contact-info-text .contact-link:hover {
+  color: var(--light-gray);
+}
+
+.contact-map-box {
+  padding: 0;
+}
+
+.contact-map-box h3 {
+  margin-bottom: 15px;
+  color: var(--white-1);
+}
+
 .contact-form { margin-bottom: 10px; }
 
 .form-intro {
@@ -1772,6 +1847,10 @@ textarea.form-input {
   /**
    * CONTACT
    */
+
+  .contact-info-wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
 
   .input-wrapper { grid-template-columns: 1fr 1fr; }
 
